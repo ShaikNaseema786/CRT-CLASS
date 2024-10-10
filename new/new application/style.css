@@ -1,0 +1,28 @@
+ body{
+    background-image: url("");
+    background-repeat: no-repeat;
+ }
+ .top{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+.searcharea{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+
+}
+#search1{
+    border: 3px solid;
+    border-radius: 4px;
+}
+#aplycolor{
+    color: black !important;
+}
+.cord{
+    background-color: transparent !important;
+    color: wheat !important;
+    font-weight: bold;
+}

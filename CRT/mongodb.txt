@@ -1,0 +1,36 @@
+db.salaries.inserMany(
+[
+  {
+    employeeId:22,
+    salaryId:22,
+    amount:890000
+  },
+  {
+    
+    employeeId:24,
+    salaryId:24,
+    amount:890000
+  },
+  {
+    
+    employeeId:24,
+    salaryId:24,
+    amount:890000
+  },
+  ]
+)
+db.salaries.find({amount:100000})
+db.salaries.find({amount:{$lt:100000})
+db.salaries.find({amount:{$gt:100000})
+db.salaries.find({amount:{$gt:750000}})
+db.salaries.updateOne({employeeId:5},
+{$set:{amount:125000}})
+db.salaries.updateMany({},{$mul:{amount:1.1}})
+db.salaries.updateMany({},{$inc:{amount:5000}})
+db.salaries.updateMany({},{$inc:{amount:7000}})
+db.salaries.updateMany({amount:{$lt:100000}},{$set:{amount:50000}})
+db.salaries.find({}).sort({amount:-1}).limit(5)
+db.salaries.find({}).sort({amount:1}).limit(5)
+db.salaries.deleteMany({
+        amount:{$
+
